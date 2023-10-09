@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 09 11:37:44 IST 2023</td>
+<td>Started on:</td><td>Mon Oct 09 15:38:20 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>66 seconds (66083 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23805 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.PARABankPractieGroup.TestLayer.OpenNewAccountTest.validateNewAccount()'><b>validateNewAccount</b><br>Test class: com.PARABankPractieGroup.TestLayer.OpenNewAccountTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;type&apos;]&quot;}
-  (Session info: chrome=117.0.5938.134)
+<td title='com.PARABankPractieGroup.TestLayer.AccountOverviewTest.VerifyAccountOverview()'><b>VerifyAccountOverview</b><br>Test class: com.PARABankPractieGroup.TestLayer.AccountOverviewTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@name=&apos;month&apos;]&quot;}
+  (Session info: chrome=117.0.5938.149)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a67fc58fef7d5715508bd14efafb2027, findElement {using=xpath, value=//select[@id=&apos;type&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57085/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a67fc58fef7d5715508bd14efafb2027
+Command: [2cd9636f168986a04a803fd148eb4522, findElement {using=xpath, value=//*[@name=&apos;month&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63244/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cd9636f168986a04a803fd148eb4522
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -100,12 +100,8 @@ Session ID: a67fc58fef7d5715508bd14efafb2027
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:43)
-	at com.PARABankPractieGroup.PageLayer.NewAccountPage.selectOptionSavingAccount(NewAccountPage.java:34)
-	at com.PARABankPractieGroup.TestLayer.OpenNewAccountTest.validateNewAccount(OpenNewAccountTest.java:43)
+	at com.PARABankPractieGroup.PageLayer.AccountDetailsPage.selectAccountActivity(AccountDetailsPage.java:25)
+	at com.PARABankPractieGroup.TestLayer.AccountOverviewTest.VerifyAccountOverview(AccountOverviewTest.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -132,16 +128,16 @@ Session ID: a67fc58fef7d5715508bd14efafb2027
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace834842620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace834842620'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;type&apos;]&quot;}
-  (Session info: chrome=117.0.5938.134)
+</pre></div><a href='#' onClick='toggleBox("stack-trace128077491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace128077491'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@name=&apos;month&apos;]&quot;}
+  (Session info: chrome=117.0.5938.149)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a67fc58fef7d5715508bd14efafb2027, findElement {using=xpath, value=//select[@id=&apos;type&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57085/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a67fc58fef7d5715508bd14efafb2027
+Command: [2cd9636f168986a04a803fd148eb4522, findElement {using=xpath, value=//*[@name=&apos;month&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63244}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63244/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cd9636f168986a04a803fd148eb4522
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -156,12 +152,8 @@ Session ID: a67fc58fef7d5715508bd14efafb2027
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.getTagName(Unknown Source)
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:43)
-	at com.PARABankPractieGroup.PageLayer.NewAccountPage.selectOptionSavingAccount(NewAccountPage.java:34)
-	at com.PARABankPractieGroup.TestLayer.OpenNewAccountTest.validateNewAccount(OpenNewAccountTest.java:43)
+	at com.PARABankPractieGroup.PageLayer.AccountDetailsPage.selectAccountActivity(AccountDetailsPage.java:25)
+	at com.PARABankPractieGroup.TestLayer.AccountOverviewTest.VerifyAccountOverview(AccountOverviewTest.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -189,8 +181,8 @@ Session ID: a67fc58fef7d5715508bd14efafb2027
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>33</td>
-<td>com.PARABankPractieGroup.TestLayer.OpenNewAccountTest@689604d9</td></tr>
+<td>12</td>
+<td>com.PARABankPractieGroup.TestLayer.AccountOverviewTest@689604d9</td></tr>
 </table><p>
 </body>
 </html>
