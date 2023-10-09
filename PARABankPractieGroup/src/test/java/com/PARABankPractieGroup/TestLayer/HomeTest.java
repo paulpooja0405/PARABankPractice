@@ -13,6 +13,9 @@ public class HomeTest extends TestBaseClass
 	{
 		HomePage homepage_obj = new HomePage(driver);
 		homepage_obj.clickOnRegisterLink();
+		homepage_obj.EnterUserName("parabank1");
+		homepage_obj.EnterPassword("parabank1");
+		homepage_obj.ClickOnLoginBtn();
 	}
 
 }
