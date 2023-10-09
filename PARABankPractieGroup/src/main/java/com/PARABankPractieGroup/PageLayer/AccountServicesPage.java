@@ -14,12 +14,17 @@ public class AccountServicesPage {
 	}
 	
 	private By openNewAC_link = By.xpath("//a[text()='Open New Account']");
-	
+	private By accountoverview_link = By.xpath("//a[contains(text(),'Accounts Overview')]");
 	
 	public void clickOnOpenNewAccount()
 	{
 		driver.findElement(openNewAC_link).click();
 	}
 	
+	public void clickOnAccountOverviewLink()
+	{
+		driver.findElement(accountoverview_link).click();
+	}
+
 
 }
