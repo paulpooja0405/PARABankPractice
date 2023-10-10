@@ -31,8 +31,10 @@ public class HomePage
 	{
 		driver.findElement(password_txtBox).sendKeys(password);
 	}
-	public void ClickOnLoginBtn() {
-		driver.findElement(login_btn).click();
+	public void ClickOnLoginBtn() 
+	{
+		driver.findElement(login_btn).click();	
+		
 	}
 
 }

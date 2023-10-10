@@ -12,6 +12,8 @@ public class AccountDetailsPage {
 		this.driver = driver;
 	}
 	
+	private By AccountNumber_link = By.xpath("//a[@href='activity.htm?id=20670']"); 
+	
 	private By AccountActivity_dropdown = By.xpath("//*[@name='month']"); 
 	
 	private By AccountType_dropdown = By.xpath("//*[@name='transactionType']"); 
@@ -19,6 +21,10 @@ public class AccountDetailsPage {
 	private By Go_btn = By.xpath("//input[@class='button']"); 
 	
 	
+	public void clickOnAccountNumber ()
+	{
+		driver.findElement(AccountNumber_link).click();
+	}
 	
 	public void selectAccountActivity (String Activity)
 	{
@@ -27,12 +33,12 @@ public class AccountDetailsPage {
 	
 	public void selectAccountType (String Type)
 	{
-		driver.findElement(AccountActivity_dropdown).sendKeys(Type);
+		driver.findElement(AccountType_dropdown).sendKeys(Type);
 	}
 	
 	public void selectgo_btn ()
 	{
-		driver.findElement(AccountActivity_dropdown).click();
+		driver.findElement(Go_btn).click();
 	}
 
 }

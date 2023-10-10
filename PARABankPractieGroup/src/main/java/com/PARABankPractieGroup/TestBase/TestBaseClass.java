@@ -18,7 +18,7 @@ public class TestBaseClass
 	
 	public void setup()
 	{
-		String browser = "Chrome";
+		String browser = "chrome";
 		
 		if(browser.equalsIgnoreCase("chrome"))
 		{
@@ -41,14 +41,14 @@ public class TestBaseClass
 		}
 		driver.get("https://parabank.parasoft.com/parabank/register.htm");
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@AfterMethod
 	public void end () throws InterruptedException
 	{
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 		//driver.quit();
 	}
 }
