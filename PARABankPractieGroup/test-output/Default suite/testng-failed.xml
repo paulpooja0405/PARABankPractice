@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.PARABankPractieGroup.TestLayer.AccountOverviewTest">
+      <class name="com.PARABankPractieGroup.TestLayer.TransferFundTest">
         <methods>
-          <include name="VerifyAccountOverview"/>
+          <include name="validateTransferFund"/>
           <include name="setup"/>
           <include name="end"/>
         </methods>
-      </class> <!-- com.PARABankPractieGroup.TestLayer.AccountOverviewTest -->
+      </class> <!-- com.PARABankPractieGroup.TestLayer.TransferFundTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
