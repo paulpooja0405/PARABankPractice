@@ -15,6 +15,7 @@ public class AccountServicesPage {
 	
 	private By openNewAC_link = By.xpath("//a[text()='Open New Account']");
 	private By accountoverview_link = By.xpath("//a[contains(text(),'Accounts Overview')]");
+	private By TransferFund_Link=By.xpath("//*[@id='leftPanel']/ul/li[3]/a");
 	
 	public void clickOnOpenNewAccount()
 	{
@@ -26,5 +27,13 @@ public class AccountServicesPage {
 		driver.findElement(accountoverview_link).click();
 	}
 
+	public void clickOnTransferFundLink()
+	{
+		
+		driver.findElement(TransferFund_Link).click();
+	}
+		
+		
+	}
 
-}
+
